@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <h3>View Friends</h3>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12- col-xl-12 col-xxl-12">
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Manc Date</th>
+                    <th scope="col">Exp Date</th>
+                    <th scope="col">Sellar</th>
+                    <th scope="col">Distributor</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                    
+                  <tr *ngFor="let i of data" >
+                    <td>{{i.productCode}}</td>
+                    <td>{{i.productName}}</td>
+                    <td>{{i.brand}}</td>
+                    <td>{{i.price}}</td>
+                    <td>{{i.manuDate}}</td>
+                    <td>{{i.expDate}}</td>
+                    <td>{{i.sellarName}}</td>
+                    <td>{{i.distributor}}</td>
+                  </tr>
+               </tbody>
+              </table>  
+        </div>
+    </div>
+</div>
