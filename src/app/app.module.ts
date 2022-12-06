@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddProductComponent } from './add-product/add-product.component';
@@ -20,13 +20,14 @@ const myRouter:Routes=[{
     AppComponent,
     AddProductComponent,
     ViewProductComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myRouter)
+    RouterModule.forRoot(myRouter),    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
